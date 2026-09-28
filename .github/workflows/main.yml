@@ -24,9 +24,6 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Restore Debug Keystore
         run: |
           if [ -f debug.keystore.base64 ]; then
@@ -60,9 +57,7 @@ jobs:
           name: "DistroMaster DMS v1.0.0 (Official APK Download)"
           body: |
             ### 📱 DistroMaster DMS — Direct APK Download
-            Click below to download the application:
-            - **File**: `DistroMaster-DMS.apk`
-            - **Platform**: Android 8.0+
+            Download the official APK file below:
           files: output_apk/DistroMaster-DMS.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
