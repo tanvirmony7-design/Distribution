@@ -1,0 +1,6 @@
+{
+  "name": "DistroMaster DMS",
+  "description": "Distribution Management System for wholesale, retail and billing with bilingual English/Bengali support, inventory, orders, and thermal receipts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
